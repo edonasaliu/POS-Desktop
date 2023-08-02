@@ -1,0 +1,22 @@
+.sidebar {
+  position: fixed;
+  height: calc(100vh - 40px);
+  overflow-y: scroll;
+  z-index: 999;
+}
+
+@media (min-width: 640px) { 
+  .sidebar {
+    height: calc(100vh - 45px);
+  }
+}
+@media (min-width: 768px) { 
+  .sidebar {
+    height: calc(100vh - 60px);
+  }
+}
+
+.sidebar .router-link-active {
+  @apply bg-neutral-100;
+  @apply dark:bg-neutral-700;
+}

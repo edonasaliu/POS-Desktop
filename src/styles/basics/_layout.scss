@@ -1,0 +1,35 @@
+.min-h-screen {
+	min-height: calc(100vh - 40px) !important;
+}
+@media (min-width: 640px) { 
+  .min-h-screen {
+    min-height: calc(100vh - 45px) !important;
+  }
+}
+@media (min-width: 768px) { 
+  .min-h-screen {
+    min-height: calc(100vh - 60px) !important;
+  }
+}
+
+.min-h-10 {
+	min-height: 10vh !important;
+}
+.min-h-25 {
+	min-height: 25vh !important;
+}
+.min-h-50 {
+	min-height: 50vh !important;
+}
+.min-h-60 {
+	min-height: 60vh !important;
+}
+.min-h-65 {
+	min-height: 65vh !important;
+}
+.min-h-75 {
+	min-height: 75vh !important;
+}
+.full-layout {
+	min-height: calc(100vh - 130px);
+}

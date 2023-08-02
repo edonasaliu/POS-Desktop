@@ -1,0 +1,60 @@
+#app {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+#sidebar{
+  width: 0;
+}
+
+#main{
+  margin-left: 0;
+}
+
+.sidebar-opened #sidebar{
+  width: 16rem;
+}
+
+.sidebar-opened #main{
+  @apply ml-0;
+	@apply sm:ml-[16rem]
+}
+
+body {
+  @apply bg-neutral-200;
+  @apply dark:bg-neutral-800;
+}
+
+div[modal-backdrop] {
+	z-index: 9998;
+}
+.h-modal{
+  z-index: 9999 !important;
+}
+
+.swal2-popup.swal2-toast {
+  background: currentColor;
+  @apply bg-neutral-300;
+  @apply dark:bg-neutral-700;
+}
+
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+.Vue-Toastification__toast {
+  border-radius: 4px !important;
+}
+
+.main-div {
+  @apply flex-col;
+  @apply flex;
+  @apply bg-neutral-200;
+  @apply dark:bg-neutral-800;
+  @apply min-h-screen;
+  @apply p-4;
+}
